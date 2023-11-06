@@ -1,0 +1,170 @@
+@import url(global.css);
+@import url(header-nav.css);
+@import url(footer.css);
+
+.carousel-inner {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.lock__header {
+    background-color: #fff1e6;
+}
+
+
+.words-lock__title {
+    font-family: 'Chewy';
+    font-size: 34px;
+    text-align: center;
+    color: #322254;
+}
+
+.words-lock__name {
+    font-family: 'Chewy';
+    font-size: 25px;
+    text-align: center;
+    color: #322254;
+}
+
+.words-lock__content {
+    font-family: 'Chewy';
+    font-size: 20px;
+    text-align: left;
+    margin-left: 5px;
+    color: #322254;
+}
+
+
+.words-lock__content {
+    white-space: pre-line;
+}
+
+.first-word {
+    color: #322254;
+    /* Change this color to the one you prefer */
+    -webkit-text-stroke: 0.1px #322254;
+}
+
+body {
+    background-color: #4ea646;
+}
+
+.polaroid-lock {
+    text-align: center;
+    background-color: #4ea646;
+}
+
+/* Style for the polaroid cards */
+.polaroid-lock__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* Adjust the gap between the polaroid cards */
+    flex-direction: column;
+}
+
+/* Style for the polaroid images */
+.polaroid-lock__image {
+    width: 250px;
+    /* Adjust the desired width for your polaroid photos */
+    transform: rotate(-5deg);
+    /* Tilt the photos slightly */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add hover effect to tilt the photos more on hover */
+.polaroid-lock__image:hover {
+    transform: rotate(-10deg);
+    /* Adjust the tilt angle as needed */
+}
+
+/* Style for the polaroid card */
+.card {
+    border: none;
+    padding: 20px;
+    margin: 0;
+    background-color: #204241;
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
+}
+
+/* Style for the polaroid title and description */
+.polaroid-lock__title,
+.polaroid-lock__name,
+.polaroid-lock__description {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Style for the second polaroid image (tilting in the opposite direction) */
+.polaroid-lock__cards :nth-child(2) .polaroid-lock__image {
+    transform: rotate(5deg);
+    /* Tilt the second polaroid in the opposite direction */
+}
+
+/* Add hover effect to tilt the photos more on hover */
+.polaroid-lock__image:hover {
+    transform: rotate(-10deg);
+    /* Adjust the tilt angle as needed */
+}
+
+/* Add hover effect to the second polaroid */
+.polaroid-lock__cards :nth-child(2) .polaroid-lock__image:hover {
+    transform: rotate(10deg);
+    /* Tilt the second polaroid in the opposite direction on hover */
+}
+
+@media (min-width: 1201px) {
+    .polaroid-lock__cards {
+        gap: 10px;
+        /* Adjust the gap between the polaroid cards for larger screens */
+    }
+}
+
+@media (min-width: 791px) {
+    .polaroid-lock__cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /* .polaroid__card {
+      width: calc(50% - 10px); /* Adjust the width of each polaroid card to create two in a row 
+    } */
+}
+
+.words-lock__content {
+    list-style: none;
+    padding-left: 0;
+}
+
+.words-lock__content span {
+    display: block;
+    margin-left: 0;
+    padding-left: 30px;
+    /* Adjust the padding as needed */
+    position: relative;
+}
+
+.words-lock__content span:before {
+    content: "";
+    background: url("/images/sword.png") no-repeat;
+    /* Replace with your image path */
+    background-size: 30px;
+    /* Adjust the image size as needed */
+    width: 30px;
+    /* Adjust the image width as needed */
+    height: 30px;
+    /* Adjust the image height as needed */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    /* Adjust the vertical alignment as needed */
+    transform: translateY(-50%);
+    /* Center the image vertically */
+}

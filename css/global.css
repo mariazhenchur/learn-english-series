@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Nanum+Pen+Script&family=Patrick+Hand&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-family: 'Chewy', sans-serif;
+}
+:root {
+    --text-color: #b67256;
+    --text-color-alternative: black;
+    --text-color-button-carousel: #a38e84;
+    --price-color: #b67256;
+   /* --background-color:  #d3ab9e; */
+    --background-color:  #fff1e6;
+    --background-color-dark: rgb(50, 38, 75);
+    --about-us-background-color-light: #B87390;
+    --about-us-background-color-dark: #A55376;
+    --about-us-header-color: #a38e84;
+    --about-us-text-color:  #a38e84;
+    --menu-background-color-light: #6382a7;
+    --menu-background-color-dark: #537398;
+    --blog-color-article-description: black;
+    --blog-button-color: #32264b; 
+    --blog-button-hover-color: #b87390;
+    --footer-divider-color: #9932CC;
+    --footer-background-color: #32264b;
+    --contacts-background-color-secondary: rgb(248, 184, 61);
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.global-container {
+    max-width: 1200px;
+    margin:auto;
+}

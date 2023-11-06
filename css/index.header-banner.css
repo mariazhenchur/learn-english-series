@@ -1,0 +1,86 @@
+.header {
+    max-width: 100%;
+  /*  height: 100vh; */
+    background-color: var(--background-color);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #b67256;
+   /* display: block;
+    flex-basis: 100%;
+   /* padding: 130px 0 135px; */
+   /* min-width: 320px;
+    font-size: 17px;
+    font-weight: 400; */
+    padding-bottom: 50px;
+  }
+  
+   .header__banner {
+    max-width: 1170px;
+    width: 100%;
+  /*  margin: 280px auto 0; */
+    margin: 100px auto 0;
+    padding: 0 15px;
+  } 
+  
+  .header__banner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .header__banner-container-pretitle {
+    font-family: "Chewy";
+    font-size: calc(58px + 22 * (100vw / 1200));
+  }
+  
+  .header__banner-container-title {
+    font-family: "Chewy";
+    font-size: calc(30px + 7 * (100vw / 1200));
+  }
+  
+  .header__banner-container-description {
+    font-family: "Patrick hand", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+    color: #b67256;
+    margin-bottom: 50px;
+  }
+  
+  .header__banner-container-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .header__banner-container-button {
+    width: 154px;
+    height: 59px;
+    color: #fff1e6;
+    font-family: "Patrick hand", sans-serif;
+    font-size: 16.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    transition: background-color 500ms;
+  }
+  
+  .header__banner-container-button:first-of-type {
+    background-color: #b67256;
+  }
+  
+  .header__banner-container-button:first-of-type:hover {
+    background-color: #b67256;
+  }
+  
+  .header__banner-container-button:last-of-type {
+    background-color: #b67256;
+  }
+  
+  .header__banner-container-button:last-of-type:hover {
+    background-color: #b67256;
+  }
+  
