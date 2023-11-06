@@ -153,7 +153,7 @@ body {
 
 .words-lock__content span:before {
     content: "";
-    background: url("/images/sword.png") no-repeat;
+    background: url("/images/sword2.png") no-repeat;
     /* Replace with your image path */
     background-size: 30px;
     /* Adjust the image size as needed */
