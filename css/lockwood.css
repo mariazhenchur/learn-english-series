@@ -64,7 +64,7 @@ body {
 
 .words-lock__content span:before {
     content: "";
-    background: no-repeat url(/images/swords.jpg);
+    background: no-repeat url(../images/sword.png);
     background-size: 30px;
     width: 30px;
     height: 30px;
