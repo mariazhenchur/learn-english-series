@@ -39,3 +39,34 @@ function renderBlogArticles(articles) {
     const articlesContainer = document.querySelector('.blog__articles');
     articlesContainer.innerHTML = articlesDomString;
 }
+
+(function () {
+    const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+    // Set the target date 10 days in the future
+    let today = new Date();
+    today.setDate(today.getDate() + 10); // Add 10 days
+
+    const countDown = today.getTime(),
+        x = setInterval(function () {
+
+            const now = new Date().getTime(),
+                distance = countDown - now;
+
+            document.getElementById("days").innerText = Math.floor(distance / day),
+            document.getElementById("hours").innerText = Math.floor((distance % day) / hour),
+            document.getElementById("minutes").innerText = Math.floor((distance % hour) / minute),
+            document.getElementById("seconds").innerText = Math.floor((distance % minute) / second);
+
+            // do something later when the date is reached
+            if (distance < 0) {
+                document.getElementById("headline").innerText = "It's my birthday!";
+                document.getElementById("countdown").style.display = "none";
+                document.getElementById("content").style.display = "block";
+                clearInterval(x);
+            }
+        }, 1000); // Update interval to 1000ms (1 second) for accuracy
+})();
