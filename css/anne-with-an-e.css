@@ -2,14 +2,14 @@
   font-family: 'Chewy';
   font-size: 34px;
   text-align: center;
-  color: #b67256;
+  color: var(--text-color-main);
 }
 
 .words__name {
   font-family: 'Chewy';
   font-size: 25px;
   text-align: center;
-  color: #b67256;
+  color: var(--text-color-main);
 }
 
 .words__content {
@@ -17,7 +17,7 @@
   font-size: 20px;
   text-align: left;
   margin-left: 5px;
-  color: #b67256;
+  color: var(--text-color-main);
 }
 
 
@@ -27,16 +27,16 @@
 
 .first-word {
   color: #bcc5d4;
-  -webkit-text-stroke: 1px #b67256;
+  -webkit-text-stroke: 1px var(--text-color-main);
 }
 
 body {
-  background-color: #fff1e6;
+  background-color: var(--background-color);
 }
 
 .polaroid {
   text-align: center;
-  background-color: #fff1e6;
+  background-color: var(--background-color);
 }
 
 .polaroid__cards {
@@ -64,7 +64,7 @@ body {
   border: none;
   padding: 20px;
   margin: 0;
-  background-color: #fff1e6;
+  background-color: var(--background-color);
 
 }
 

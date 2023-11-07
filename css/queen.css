@@ -12,7 +12,7 @@ img {
 }
 
 .queen__header {
-    background-color: #fff1e6;
+    background-color: var(--background-color);
 }
 
 
@@ -20,14 +20,14 @@ img {
     font-family: 'Chewy';
     font-size: 34px;
     text-align: center;
-    color: #40231f;
+    color: var(--text-color-queen);
 }
 
 .words-queen__name {
     font-family: 'Chewy';
     font-size: 25px;
     text-align: center;
-    color: #40231f;
+    color: var(--text-color-queen);
 }
 
 .words-queen__content {
@@ -35,7 +35,7 @@ img {
     font-size: 20px;
     text-align: left;
     margin-left: 5px;
-    color: #40231f;
+    color: var(--text-color-queen);
 }
 
 
@@ -44,11 +44,11 @@ img {
 }
 
 .first-word {
-    color: #40231f;
+    color: var(--text-color-queen);
 }
 
 body {
-    background-color: #204241;
+    background-color: var(--background-color-queen);
 }
 
 

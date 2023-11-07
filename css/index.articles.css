@@ -1,25 +1,25 @@
 body {
-    background-color: #b67256;
+    background-color: var(--text-color-main);
 }
 
 .blog__title {
     font-family: 'Chewy';
     font-size: 34px;
     text-align: center;
-    color: #b67256;
+    color: var(--text-color-main);
 }
 
 .blog__name {
     font-family: 'Chewy';
     font-size: 25px;
     text-align: center;
-    color: #b67256;
+    color: var(--text-color-main);
 }
 
 .blog__description {
     font-family: 'Patrick hand', sans-serif;
     font-size: 20px;
-    color: #b67256;
+    color: var(--text-color-main);
     text-align: center;
 }
 
@@ -27,13 +27,13 @@ body {
     font-family: 'Chewy';
     font-size: 22px;
     font-weight: 400;
-    color: #b67256;
+    color: var(--text-color-main);
 }
 
 .blog {
     padding: 60px 24px;
     text-align: left;
-    background-color: #e8d1c5;
+    background-color: var(--background-color-articles);
 }
 
 .blog__articles img {
@@ -49,15 +49,15 @@ body {
 .article__description {
     font-family: 'Patrick hand', sans-serif;
     font-size: 18px;
-    color: #b67256;
+    color: var(--text-color-main);
     margin-top: 20px;
 }
 
 .blog__button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #b67256;
-    color: #fff1e6;
+    background-color: var(--text-color-main);
+    color: var(--background-color);
     text-decoration: none;
     font-size: 15px;
     cursor: pointer;
@@ -65,10 +65,6 @@ body {
     font-family: 'Patrick hand', sans-serif;
     margin-top: 30px;
     transition: background-color 0.3s ease;
-}
-
-.blog__button:hover {
-    background-color: #b67256;
 }
 
 .blog__articles {
@@ -115,7 +111,7 @@ body {
 
 .container-count {
     align-items: center;
-    background-color: #e8d1c5;
+    background-color: var(--background-color-articles);
     display: flex;
     font-family: -apple-system,
         "Segoe UI",
@@ -124,7 +120,7 @@ body {
 }
 
 .container-count {
-    color: #b67256;
+    color: var(--text-color-main);
     margin: 0 auto;
 }
 
