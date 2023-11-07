@@ -1,6 +1,5 @@
 @import url(global.css);
 @import url(header-nav.css);
-@import url(footer.css);
 
 .carousel-inner {
     margin-top: 20px;
@@ -46,97 +45,12 @@ img {
 
 .first-word {
     color: #40231f;
-    /* Change this color to the one you prefer */
-    -webkit-text-stroke: 0.1px #40231f;
 }
 
 body {
     background-color: #204241;
 }
 
-.polaroid-queen {
-    text-align: center;
-    background-color: #204241;
-}
-
-/* Style for the polaroid cards */
-.polaroid-queen__cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    /* Adjust the gap between the polaroid cards */
-    flex-direction: column;
-}
-
-/* Style for the polaroid images */
-.polaroid-queen__image {
-    width: 250px;
-    /* Adjust the desired width for your polaroid photos */
-    transform: rotate(-5deg);
-    /* Tilt the photos slightly */
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Add hover effect to tilt the photos more on hover */
-.polaroid-queen__image:hover {
-    transform: rotate(-10deg);
-    /* Adjust the tilt angle as needed */
-}
-
-/* Style for the polaroid card */
-.card {
-    border: none;
-    padding: 20px;
-    margin: 0;
-    background-color: #204241;
-    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
-}
-
-/* Style for the polaroid title and description */
-.polaroid-queen__title,
-.polaroid-queen__name,
-.polaroid-queen__description {
-    margin: 0;
-    font-weight: bold;
-}
-
-/* Style for the second polaroid image (tilting in the opposite direction) */
-.polaroid-queen__cards :nth-child(2) .polaroid-queen__image {
-    transform: rotate(5deg);
-    /* Tilt the second polaroid in the opposite direction */
-}
-
-/* Add hover effect to tilt the photos more on hover */
-.polaroid-queen__image:hover {
-    transform: rotate(-10deg);
-    /* Adjust the tilt angle as needed */
-}
-
-/* Add hover effect to the second polaroid */
-.polaroid-queen__cards :nth-child(2) .polaroid-queen__image:hover {
-    transform: rotate(10deg);
-    /* Tilt the second polaroid in the opposite direction on hover */
-}
-
-@media (min-width: 1201px) {
-    .polaroid-queen__cards {
-        gap: 10px;
-        /* Adjust the gap between the polaroid cards for larger screens */
-    }
-}
-
-@media (min-width: 791px) {
-    .polaroid-queen__cards {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    /* .polaroid__card {
-      width: calc(50% - 10px); /* Adjust the width of each polaroid card to create two in a row 
-    } */
-}
 
 .words-queen__content {
     list-style: none;
@@ -147,24 +61,17 @@ body {
     display: block;
     margin-left: 0;
     padding-left: 30px;
-    /* Adjust the padding as needed */
     position: relative;
 }
 
 .words-queen__content span:before {
     content: "";
     background: url(/images/queen-figure.png) no-repeat;
-    /* Replace with your image path */
     background-size: 30px;
-    /* Adjust the image size as needed */
     width: 30px;
-    /* Adjust the image width as needed */
     height: 30px;
-    /* Adjust the image height as needed */
     position: absolute;
     left: 0;
     top: 50%;
-    /* Adjust the vertical alignment as needed */
     transform: translateY(-50%);
-    /* Center the image vertically */
 }

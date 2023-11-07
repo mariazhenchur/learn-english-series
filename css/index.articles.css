@@ -113,23 +113,12 @@ body {
     }
 }
 
-/*.blog-count {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-} */
-
 .container-count {
     align-items: center;
     background-color: #e8d1c5;
     display: flex;
     font-family: -apple-system,
-        BlinkMacSystemFont,
         "Segoe UI",
-        Roboto,
-        Oxygen-Sans,
-        Ubuntu,
-        Cantarell,
         "Helvetica Neue",
         sans-serif;
 }
@@ -137,7 +126,6 @@ body {
 .container-count {
     color: #b67256;
     margin: 0 auto;
-    /* text-align: center; */
 }
 
 .container-count h1 {
