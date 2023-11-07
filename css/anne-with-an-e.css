@@ -26,7 +26,7 @@
 }
 
 .first-word {
-  color: #bcc5d4;
+  color: var(--overline-color);
   -webkit-text-stroke: 1px var(--text-color-main);
 }
 

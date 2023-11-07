@@ -22,6 +22,7 @@ a {
     --background-color-queen: #204241;
     --background-color-lock: #4ea646;
     --background-color-articles: #e8d1c5; 
+    --overline-color: #bcc5d4;
     scroll-behavior: smooth;
     background-color: var(--background-color);
     color: var(--text-color);
