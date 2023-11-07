@@ -20,7 +20,7 @@ img {
 
 .words-queen__content span:before {
     content: "";
-    background: url("/images/queen-figure.png") no-repeat;
+    background: url(../images/queen-figure.png) no-repeat;
     background-size: 30px;
     width: 30px;
     height: 30px;
