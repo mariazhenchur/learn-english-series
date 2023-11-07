@@ -11,6 +11,25 @@ img {
     width: 100%;
 }
 
+.words-queen__content span {
+    display: block;
+    margin-left: 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+.words-queen__content span:before {
+    content: "";
+    background: url(/images/queen-figure.png) no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .queen__header {
     background-color: var(--background-color);
 }
@@ -57,21 +76,3 @@ body {
     padding-left: 0;
 }
 
-.words-queen__content span {
-    display: block;
-    margin-left: 0;
-    padding-left: 30px;
-    position: relative;
-}
-
-.words-queen__content span:before {
-    content: "";
-    background: url(/images/queen-figure.png) no-repeat;
-    background-size: 30px;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
