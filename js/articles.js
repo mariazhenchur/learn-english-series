@@ -4,21 +4,24 @@ const articles = [
         name: "Anne With An E",
         description: "Dive into the enchanting world of Anne as you explore a section featuring vocabulary from this series. Immerse yourself in the captivating stories of Anne in picturesque Avonlea while gaining valuable insights into the English language",
         imageDescription: "Anne",
-        image: "images/article-anne-w.png"
+        image: "images/article-anne-w.png",
+        button: "anne.html"
     },
     {
         id: "2",
         name: "Lockwood & Co.",
         description: "Unlock the supernatural with 'Lockwood & Co.' Explore ghostly London, join young investigators, and sharpen your English with interactive subtitles. It's more than a series; it's your key to mastering English through enigmatic adventures.",
         imageDescription: "Lockwood & Co.",
-        image: "images/article-lockwood.png"
+        image: "images/article-lockwood.png",
+        button: "lockwood.html"
     },
     {
         id: "3",
         name: "The Queen's Gambit",
         description: "Master English with 'The Queen's Gambit.' Join Beth's chess journey, enhance your language skills with different words, and dive into the world of grandmaster-level competition. It's your chance to make a winning move for language proficiency.",
         imageDescription: "Beth",
-        image: "images/article-queen.png"
+        image: "images/article-queen.png",
+        button: "queen.html"
     },
 ];
 
@@ -32,7 +35,7 @@ function renderBlogArticles(articles) {
             <img class="article__image" src="${article.image}" alt="${article.imageDescription}">
             <h4 class="article__title">${article.name}</h4>
             <p class="article__description">${article.description}</p>
-            <a class="blog__button" href="#">Learn More</a>
+            <a class="blog__button" href="${article.button}">Learn More</a>
         </div>
         `;
     }
